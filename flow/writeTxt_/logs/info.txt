@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-132
+133
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
   exec_task: word_recognizer 
@@ -9,4 +9,21 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202403041726249625.pdf --> para 202403041726249625.pdf:Page_idx: 1 1 <-> [(0, 2), (0, 3)]
-#docs: 132 #processed: 1
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+  exec_task: word_recognizer 
+  exec_task: pdftable_finder 
+	==Total:0 Errors=0 
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403071054377125.pdf: >शासन निर्णय क्रमांक< >सिआयडी-३०२३/प्र.क्र.२३८/नवि-१०<
+	elapsed_time:202403071054377125.pdf: 0.000079
+  exec_task: doc_translator_hf 
+    Paras: #27 Sentences: #12
+	[0]  #words: 32 #sentences: 8
+	After generate: 2 MB
+	[0]  #words: 215 #sentences: 35
+	After generate: 3 MB
+  exec_task: text_writer 
+#docs: 133 #processed: 2
