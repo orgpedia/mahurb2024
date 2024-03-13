@@ -14,25 +14,7 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
 **** PIPEERROR IN 202403111841154425.pdf --> 128
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202403111938394625.pdf missing_cmaps: nirmalauibold
-  exec_task: word_recognizer 
-  exec_task: pdftable_finder 
-	==Total:0 Errors=0 
-  exec_task: line_finder 
-  exec_task: para_finder 
-  exec_task: extract_order_number 
-	extract_order_number:202403111938394625.pdf: >शासन निर्णय क्रमांक< >एमआरडी-३३२३/प्र.क्र.१४५/नवि-७<
-	elapsed_time:202403111938394625.pdf: 0.000085
-  exec_task: doc_translator_hf 
-    Paras: #52 Sentences: #0
-	[0]  #words: 261 #sentences: 49
-	After generate: 3 MB
-	[1]  #words: 170 #sentences: 16
-	After generate: 3 MB
-  exec_task: text_writer 
-  exec_task: pdf_cid_info 
-  exec_task: pdf_cid_reader 
-	202403121410311325.pdf missing_cmaps: nirmalauibold, sakalmarathinormal
+	202403121410311325.pdf missing_cmaps: sakalmarathinormal, nirmalauibold
   exec_task: word_recognizer 
 	Tesseract on page: 0
 	Tesseract on page: 1
@@ -42,4 +24,4 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202403121410311325.pdf --> para 202403121410311325.pdf:Page_idx: 0 7 <-> [(0, 19)]
-#docs: 141 #processed: 4
+#docs: 141 #processed: 3
