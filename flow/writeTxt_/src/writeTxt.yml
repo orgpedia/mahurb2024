@@ -12,6 +12,7 @@ pipeline:
   - name: pdf_cid_reader
     config:
         swap_cids: [['sakalmarathi', 66, 126]] # u and dot (mumbai)
+        max_pages: 25
 
   - name: word_recognizer
 
