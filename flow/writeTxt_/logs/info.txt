@@ -11,26 +11,7 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
 **** PIPEERROR IN 202403041726249625.pdf --> para 202403041726249625.pdf:Page_idx: 1 1 <-> [(0, 2), (0, 3)]
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202403111841154425.pdf missing_cmaps: nirmalauibold
-  exec_task: word_recognizer 
-	Replaced 0:197 >निर्णय(nirmalauibold-cid:128)-<  >[नणय:-<
-  exec_task: pdftable_finder 
-	==Total:0 Errors=0 
-  exec_task: line_finder 
-  exec_task: para_finder 
-  exec_task: extract_order_number 
-	extract_order_number:202403111841154425.pdf: >शासन निर्णय क्रमांक< >नामपा-१२२४/प्र.क्र.११/नवि-२६<
-	elapsed_time:202403111841154425.pdf: 0.000125
-  exec_task: doc_translator_hf 
-    Paras: #42 Sentences: #0
-	[0]  #words: 262 #sentences: 41
-	After generate: 3 MB
-	[1]  #words: 81 #sentences: 7
-	After generate: 3 MB
-  exec_task: text_writer 
-  exec_task: pdf_cid_info 
-  exec_task: pdf_cid_reader 
-	202403121410311325.pdf missing_cmaps: sakalmarathinormal, nirmalauibold
+	202403121410311325.pdf missing_cmaps: sakalmarathinormal
   exec_task: word_recognizer 
 	Tesseract on page: 0
 	Tesseract on page: 1
@@ -40,36 +21,4 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202403121410311325.pdf --> para 202403121410311325.pdf:Page_idx: 0 7 <-> [(0, 19)]
-  exec_task: pdf_cid_info 
-  exec_task: pdf_cid_reader 
-	202403152106201525.pdf missing_cmaps: sakalmarathinormal, nirmalauibold
-  exec_task: word_recognizer 
-	Tesseract on page: 0
-	Tesseract on page: 1
-	Tesseract on page: 2
-	Tesseract on page: 3
-	Tesseract on page: 4
-	Tesseract on page: 5
-	Tesseract on page: 6
-	Tesseract on page: 7
-  exec_task: pdftable_finder 
-	==Total:115 Errors=115 TableEmptyBodyCellError=115
-  exec_task: line_finder 
-  exec_task: para_finder 
-  exec_task: extract_order_number 
-	extract_order_number:202403152106201525.pdf: >शासन निर्णय क्रमांक< >अशासे-२०२३/प्र.क्र.८८/नवि-०४<
-	elapsed_time:202403152106201525.pdf: 0.000138
-  exec_task: doc_translator_hf 
-    Paras: #96 Sentences: #18
-	[0]  #words: 93 #sentences: 14
-	After generate: 3 MB
-	[0]  #words: 262 #sentences: 63
-	After generate: 12 MB
-	[1]  #words: 265 #sentences: 26
-	After generate: 12 MB
-	[2]  #words: 260 #sentences: 22
-	After generate: 12 MB
-	[3]  #words: 211 #sentences: 13
-	After generate: 12 MB
-  exec_task: text_writer 
-#docs: 195 #processed: 4
+#docs: 195 #processed: 2
