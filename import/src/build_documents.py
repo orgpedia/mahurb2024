@@ -42,7 +42,7 @@ def main():
     dept_infos = [i for i in all_infos if i["Department Name"] == DeptName]
 
     for info in dept_infos:
-        info['Unique Code'] = info['Unique Code'].replace('\u200d', '')    
+        info['Unique Code'] = info['Unique Code'].replace('\u200d', '')
 
     doc_infos = json.loads(doc_info_path.read_text()) if doc_info_path.exists() else []
     doc_set = set(i["Unique Code"] for i in doc_infos)
