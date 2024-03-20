@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-238
+241
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
   exec_task: word_recognizer 
@@ -23,20 +23,64 @@ src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
 **** PIPEERROR IN 202403121410311325.pdf --> para 202403121410311325.pdf:Page_idx: 0 7 <-> [(0, 19)]
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202403191720280525.pdf missing_cmaps: sakalmarathinormal
+	202403191745070725.pdf missing_cmaps: sakalmarathinormal
   exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+  exec_task: pdftable_finder 
+	==Total:21 Errors=21 TableEmptyBodyCellError=21
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403191745070725.pdf: >शासन निर्णय क्रमांक< >एमसीओ-२०२४/प्र.क्र.१२२/नवि-१४<
+	elapsed_time:202403191745070725.pdf: 0.000083
+  exec_task: doc_translator_hf 
+    Paras: #40 Sentences: #18
+	[0]  #words: 109 #sentences: 18
+	After generate: 2 MB
+	[0]  #words: 272 #sentences: 50
+	After generate: 10 MB
+	[1]  #words: 81 #sentences: 3
+	After generate: 10 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403191745300125.pdf missing_cmaps: sakalmarathinormal
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+  exec_task: pdftable_finder 
+	==Total:3 Errors=3 TableEmptyBodyCellError=3
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403191745300125.pdf: >शासन निर्णय क्रमांक< >एमसीओ-२०२४/प्र.क्र.१२२/नवि-१४<
+	elapsed_time:202403191745300125.pdf: 0.000082
+  exec_task: doc_translator_hf 
+    Paras: #22 Sentences: #3
+	[0]  #words: 15 #sentences: 3
+	After generate: 10 MB
+	[0]  #words: 203 #sentences: 30
+	After generate: 10 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403201447200225.pdf missing_cmaps: nirmalaui, sakalmarathinormal
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
   exec_task: pdftable_finder 
 	==Total:0 Errors=0 
   exec_task: line_finder 
   exec_task: para_finder 
   exec_task: extract_order_number 
-	extract_order_number:202403191720280525.pdf: >शासन निर्णय क्रमांक< >एमसीओ-२०२४/प्र.क्र.१२२/नवि-१४<
-	elapsed_time:202403191720280525.pdf: 0.000090
+	extract_order_number:202403201447200225.pdf: >शासन शुध्दीपत्रक क्रमांक< >सिआयडी-३३२३//प्र.क्र.५३ (भाग-१)/नवि-१०<
+	elapsed_time:202403201447200225.pdf: 0.000106
   exec_task: doc_translator_hf 
-    Paras: #27 Sentences: #76
-	[0]  #words: 254 #sentences: 38
-	After generate: 3 MB
-	[0]  #words: 218 #sentences: 32
-	After generate: 3 MB
+    Paras: #33 Sentences: #0
+	[0]  #words: 269 #sentences: 44
+	After generate: 10 MB
+	[1]  #words: 69 #sentences: 3
+	After generate: 10 MB
   exec_task: text_writer 
-#docs: 238 #processed: 3
+#docs: 241 #processed: 5
